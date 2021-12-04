@@ -1,3 +1,23 @@
+Skip to content
+Oxie1
+/
+Oxie
+Public
+forked from ameer-kallumthodi/Oxie
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Oxie/bot.js
+@souravkl11
+souravkl11 FIXED ERRORS 🛠✅
+ 13 contributors
+@farhan-dqz@phaticusthiccy@ameer-kallumthodi@yusufusta@souravkl11@saidalisaid2@afnanplk@lyfe00011@MuhammedKpln@Xenon67@cyberchekuthan@oguz162
+412 lines (355 sloc)  24.2 KB
 /* Copyright (C) 2020 Yusuf Usta.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
@@ -17,7 +37,7 @@ const axios = require('axios');
 const got = require('got');
 
 // Sql
-const WhatsAsenaDB = config.DATABASE.define('WhatsAsena'conn.sendMessage(conn.user.jid {
+const WhatsAsenaDB = config.DATABASE.define('WhatsAsena', {
     info: {
       type: DataTypes.STRING,
       allowNull: false
@@ -139,7 +159,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('✅ Pikachu working!')
+            chalk.green.bold('✅ Oxie working!')
         );
         await new Promise(r => setTimeout(r, 1100));
 
@@ -186,7 +206,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                     })
                 }
                 else {
-                    await , '*Bot Started*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*Bot Started*', MessageType.text);
                 }
 
             }
@@ -380,10 +400,10 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
                                     '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
                                     '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._\n\n' +
-n Hata: ' + error + '\n\n'
+                                    'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~_________~ *PIKACHU ERROR FOUND!* ~______~*' +
+                                await conn.sendMessage(conn.user.jid, '*~_________~ *Oxie ERROR FOUND!* ~______~*' +
                                     '\n\n*🧞‍♂️ ' + error + '*\n\n```*Subscribe channel to get updates and to remove errors:* https://www.youtube.com/channel/UCpGa88rhUFYj-6-LBqBbWKw \n Report errors\njoin with +91 \n https://chat.whatsapp.com/BLdaoLVnX6jFnkKHFjLbH6``` ' 
                                     , MessageType.text);
                             }
@@ -410,3 +430,15 @@ n Hata: ' + error + '\n\n'
 }
 
 whatsAsena();
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
